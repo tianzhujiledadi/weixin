@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "天主极乐大帝",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar":{
+    "color":"#000000",
+    "backgroundColor":"#00ff00",
+    "selectedColor":"green",
+    "list":[{
+      "text":"首页",
+      "pagePath":"pages/index/index",
+      "iconPath":"/image/persion_select.png",
+      "selectedIconPath":"/image/persion.png"
+    },
+      {
+    "text": "列表页",
+    "pagePath": "pages/list/list",
+    "iconPath": "/image/persion_select.png",
+    "selectedIconPath": "/image/persion.png"
+      },
+    {
+      "text": "日志",
+      "pagePath": "pages/logs/logs",
+      "iconPath": "/image/persion_select.png",
+      "selectedIconPath": "/image/persion.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json"
+}

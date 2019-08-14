@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view >
+    <swiper class="banner_border"  autoplay="true" interval="3000" circular="true">
+    <!-- autoplay轮播图播放，默认·是false  interval轮播图播放间隔（毫秒） vertical垂直的，-->
+
+        <swiper-item>
+            <image class="banner" src="/image/python1.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="banner" src="/image/python2.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="banner" src="/image/python3.jpg"></image>
+        </swiper-item><!-- 仅可以放置在swiper容器中宽高自动设置为100% -->
+    </swiper><!-- 滑块视图容器 -->
+</view>
+<view>
+  <view  wx:for="{{article_list}}"  wx:for-item="item"  class="content"  hover-class="content_hover">
+    <!-- <view wx:for="{{article_list}}" wx:for-item="item"> -->
+    <!-- </view> wx:for循环一个列表；wx:for-item=列表中的每个元素  article_list是index.js中的数据-->
+    <view class="pic_box">
+      <image src="{{item.picture}}"></image>
+    </view>
+    <view class="content_box">
+      <view>
+        <navigator class="title" open-type="reLaunch" url="pages/list/list?pages='{{index}}'">{{item.title}}</navigator>
+    <!-- {{index}}得到该元素在列表中的下标  reLaunch重新发射，重新调转-->
+    <!-- open-type需要被指定为reLaunch只有这个方法才允许会允许携带get参数进行跳转  open-type微信开放能力-->
+      </view>
+      <text class="description">{{item.description}}</text>
+      <view class="time">{{motto}}{{item.time}}</view>
+    </view>
+  </view>
+</view>
