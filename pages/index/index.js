@@ -1,13 +1,13 @@
 //index.js
 //获取应用实例
-const app = getApp()
+const app = getApp()//实例化app
 
 Page({
   data: {//局部变量来源于，当前页面的js文件中的page变量中的data变量
     motto: '天主极乐大帝亿岁',
     article_list:app.globalData.article_list
-  },//得到app.js中的article_list数据
-  
+  },//得到app.js中的article_list数据//得到app.js中的article_list数据
+
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({

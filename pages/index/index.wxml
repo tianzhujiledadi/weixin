@@ -1,7 +1,8 @@
 <!--index.wxml-->
 <view >
     <swiper class="banner_border"  autoplay="true" interval="3000" circular="true">
-    <!-- autoplay轮播图播放，默认·是false  interval轮播图播放间隔（毫秒） vertical垂直的，-->
+    <!-- autoplay轮播图播放，默认·是false  interval轮播图播放间隔（毫秒） vertical垂直的，
+    circular以平缓的方式过渡（循环的间接的）-->
 
         <swiper-item>
             <image class="banner" src="/image/python1.jpg"></image>
@@ -15,9 +16,25 @@
     </swiper><!-- 滑块视图容器 -->
 </view>
 <view>
+<swiper class="banner_border" autoplay="true"  interval="3000" circular="true" vertical="true">
+  <!--autoplay轮播图播放，默认是false  interval 轮播图播放间隔（毫秒）  vertical垂直的
+  circular 以平缓的方式过渡（循环的间接的）  -->
+  <swiper-item>
+  <image class="banner" src="/image/python1.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+  <image class="banner" src="/image/python2.jpg"></image>
+  </swiper-item>
+   <swiper-item>
+  <image class="banner" src="/image/python3.jpg"></image>
+  </swiper-item>
+  </swiper>
+</view>
+<view>
   <view  wx:for="{{article_list}}"  wx:for-item="item"  class="content"  hover-class="content_hover">
     <!-- <view wx:for="{{article_list}}" wx:for-item="item"> -->
     <!-- </view> wx:for循环一个列表；wx:for-item=列表中的每个元素  article_list是index.js中的数据-->
+    <!-- wx:for 循环一个列表；wx:for-item=列表中的每个元素 article_list是index.js中的数据 -->
     <view class="pic_box">
       <image src="{{item.picture}}"></image>
     </view>

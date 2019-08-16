@@ -1,2 +1,9 @@
 <!--pages/list/list.wxml-->
-<text>pages/list/list.wxml</text>
+<text id="{{obj_id}}">{{name}}</text>
+<text id ="text_{{obj_id}}">
+{{name}}</text>
+<text wx:if="{{ display }}">
+{{name}}</text>
+<text wx:for="{{name}}">
+index:{{index}}item::{{item}}</text>//循环name,进行遍历字符串
+

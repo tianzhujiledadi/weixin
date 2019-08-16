@@ -1,11 +1,14 @@
 // pages/list/list.js
+const  app=getApp()//实例化APP
 Page({
 
   /**
    * 页面的初始数据（json)文件不能加注释
    */
   data: {
-
+    name:"hello  world",
+    obj_id:1,
+    display:true
   },
 
   /**

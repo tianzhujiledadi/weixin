@@ -8,11 +8,11 @@
 }
 .content{
   width: 100%;
-  height: 110px;
+  height: 100px;
   display: flex;
   margin-top: 5px;
   background: #EFFFE9;
-  /*border-bottom: 2px #E7ID36  solid;*/
+  border-bottom: 2px #EFFFE9 solid;
 }
 
 .content_hover{
@@ -21,7 +21,7 @@
 
 .pic_box {
   width:30%;
-  height: 110%;
+  height: 100%;
 }
 
 .pic_box image{
